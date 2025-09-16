@@ -1,38 +1,36 @@
 version: '3.6'
 
 services:
-  flexxuswebapi-v6:
-    image: fabreguesm/flxwebapi-v6:2.8.311
+  licenseserver:
+    image: fabreguesm/flx-server-license:1.0.0
     networks:
       - traefik
     volumes:
       - 'node_data:/app/data/'
-      - 'factura_data:/app/factura_electronica/'
-      - 'pdf_data:/app/public/pdf/'
-    ports:
-      - '5000:5000'
-    deploy:      
+    deploy:
       placement:
-        constraints: ["${NODE}"]      
-    environment:  
-      - FE_MODE=production
-      - FE_PASSPHRASE=123456
-    logging:
-      driver: loki
-      options:
-        loki-url: ${LOKI_URL}  
-  flexxuserpweb:
-    image: fabreguesm/flexxuserpweb:latest
-    ports: 
-      - '5001:80'
-    networks:
-      - traefik      
-    deploy:      
-      placement:
-        constraints: ["${NODE}"]            
+        constraints: ["${NODE}"]
     environment:
-      - MAIL_TO_ERROR=errores.flexxus@gmail.com
-      - URL_MAP_SERVICE=http://10.150.4.12:15310
+      - PORT=9900
+      - HOST=localhost
+      - SECRET_KEY=p@55w0rdu1tr@s3cr3t0
+      - DB=serverlicencia
+      - DB_USERNAME=flexxus
+      - TZ=-03:00
+      - BASE_URL=
+      - DB_HOST=10.150.4.6
+      - DB_PORT=15282      
+      - DB_PASS=Flexxus2023**
+      - DIAS_DESDE_DEMO=-1
+      - DIAS_HASTA_DEMO=90
+      - PRODUCTO_DEFECTO=API
+      - VERSION_DEFECTO=Demo
+      - CANTIDAD_DEFECTO_DEMO=10
+      - CANTIDAD_DEFECTO=1
+      - PATH_LICENCIAACTUALIZAR=v5/license/update
+      - SECRET_API=53ru3r_d3_1iC3nci@s_u2
+    ports:
+      - "5006:9900"
     logging:
       driver: loki
       options:
@@ -40,11 +38,7 @@ services:
 volumes:
   node_data:
     name: "${SERVICE_NAME}_node-data"
-  factura_data:
-    name: "${SERVICE_NAME}_factura-data"
-  pdf_data:
-    name: "${SERVICE_NAME}_pdf-data"
 networks:
   traefik:
-    external: true  
-    name: traefik
+    external:
+      name: traefik
