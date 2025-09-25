@@ -40,5 +40,5 @@ volumes:
     name: "${SERVICE_NAME}_node-data"
 networks:
   traefik:
-    external: true
+    external: 
       name: traefik
