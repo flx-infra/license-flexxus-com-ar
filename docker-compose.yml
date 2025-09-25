@@ -18,7 +18,7 @@ services:
       - DB_USERNAME=flexxus
       - TZ=-03:00
       - BASE_URL=
-      - DB_HOST=mariadb-flexxus-com-ar_mariadb
+      - DB_HOST=mariadb
       - DB_PORT=5010     
       - DB_PASS=Flexxus2023**
       - DIAS_DESDE_DEMO=-1
