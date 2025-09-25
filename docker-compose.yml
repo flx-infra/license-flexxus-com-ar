@@ -15,11 +15,11 @@ services:
       - HOST=localhost
       - SECRET_KEY=p@55w0rdu1tr@s3cr3t0
       - DB=serverlicencia
-      - DB_USERNAME=flexxus
+      - DB_USERNAME=root
       - TZ=-03:00
       - BASE_URL=
-      - DB_HOST=10.150.4.6
-      - DB_PORT=15282      
+      - DB_HOST=10.250.0.68
+      - DB_PORT=5002      
       - DB_PASS=Flexxus2023**
       - DIAS_DESDE_DEMO=-1
       - DIAS_HASTA_DEMO=90
