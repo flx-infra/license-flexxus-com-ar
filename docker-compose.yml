@@ -19,7 +19,7 @@ services:
       - TZ=-03:00
       - BASE_URL=
       - DB_HOST=10.250.0.68
-      - DB_PORT=5002      
+      - DB_PORT=5010     
       - DB_PASS=Flexxus2023**
       - DIAS_DESDE_DEMO=-1
       - DIAS_HASTA_DEMO=90
