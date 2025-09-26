@@ -18,7 +18,7 @@ services:
       - DB_USERNAME=flexxus
       - TZ=-03:00
       - BASE_URL=http://10.250.0.68:5006
-      - DB_HOST=10.150.0.68
+      - DB_HOST=10.250.0.68
       - DB_PORT=5010     
       - DB_PASS=Flexxus2023**
       - DIAS_DESDE_DEMO=-1
