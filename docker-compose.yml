@@ -11,8 +11,8 @@ services:
       placement:
         constraints: ["${NODE}"]
     environment:
-      - PORT=9900
-      - HOST=licenseserver
+      - PORT=5006
+      - HOST=10.250.0.68
       - SECRET_KEY=p@55w0rdu1tr@s3cr3t0
       - DB=serverlicencia
       - DB_USERNAME=flexxus
