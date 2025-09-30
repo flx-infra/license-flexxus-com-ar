@@ -14,6 +14,7 @@ services:
       - PORT=5006
       - HOST=10.250.0.68
       - SECRET_KEY=p@55w0rdu1tr@s3cr3t0
+      - MODE=production
       - DB=serverlicencia
       - DB_USERNAME=flexxus
       - TZ=-03:00
