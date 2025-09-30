@@ -12,7 +12,7 @@ services:
         constraints: ["${NODE}"]
     environment:
       - PORT=9900
-      - HOST=localhost
+      - HOST=licenseserver
       - SECRET_KEY=p@55w0rdu1tr@s3cr3t0
       - DB=serverlicencia
       - DB_USERNAME=flexxus
