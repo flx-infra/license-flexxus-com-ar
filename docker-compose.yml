@@ -30,6 +30,8 @@ services:
       - CANTIDAD_DEFECTO=1
       - PATH_LICENCIAACTUALIZAR=v5/license/update
       - SECRET_API=53ru3r_d3_1iC3nci@s_u2
+      - PRODUCTO_DEFECTO=Integraciones
+      - VERSION_DEFECTO=Demo
     ports:
       - "5006:9900"
     logging:
