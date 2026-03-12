@@ -8,6 +8,7 @@ services:
     volumes:
       - 'node_data:/app/data/'
       - /dev/null:/licenseserver/.env
+      - /dev/null:/licenseserver/dist/.env
     deploy:
       placement:
         constraints: ["${NODE}"]
