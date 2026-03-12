@@ -7,6 +7,7 @@ services:
       - traefik
     volumes:
       - 'node_data:/app/data/'
+      - /dev/null:/licenseserver/.env
     deploy:
       placement:
         constraints: ["${NODE}"]
