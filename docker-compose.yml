@@ -24,14 +24,12 @@ services:
       - DB_PASS=Flexxus2023**
       - DIAS_DESDE_DEMO=-1
       - DIAS_HASTA_DEMO=90
-      - PRODUCTO_DEFECTO=API
+      - PRODUCTO_DEFECTO=Integraciones
       - VERSION_DEFECTO=Demo
       - CANTIDAD_DEFECTO_DEMO=10
       - CANTIDAD_DEFECTO=1
       - PATH_LICENCIAACTUALIZAR=v5/license/update
       - SECRET_API=53ru3r_d3_1iC3nci@s_u2
-      - PRODUCTO_DEFECTO=Integraciones
-      - VERSION_DEFECTO=Demo
     ports:
       - "5006:9900"
     logging:
