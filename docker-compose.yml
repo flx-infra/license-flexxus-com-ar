@@ -31,9 +31,6 @@ services:
       - CANTIDAD_DEFECTO=1
       - PATH_LICENCIAACTUALIZAR=v5/license/update
       - SECRET_API=53ru3r_d3_1iC3nci@s_u2
-      - FLEXXUS_API_BASE_URL=https://soporte.flexxus.com.ar/api/
-      - FLEXXUS_API_USERNAME=helpdesk@flexxus.com.ar
-      - FLEXXUS_API_PASSWORD=Flexxus+2025
     ports:
       - "5006:9900"
     logging:
