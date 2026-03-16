@@ -13,15 +13,15 @@ services:
         constraints: ["${NODE}"]
     environment:
       - PORT=9900
-      - HOST=10.250.0.68
+      - HOST=localhost
       - SECRET_KEY=p@55w0rdu1tr@s3cr3t0
       - MODE=production
       - DB=serverlicencia
       - DB_USERNAME=flexxus
       - TZ=-03:00
       - BASE_URL=http://10.250.0.68:5006
-      - DB_HOST=mariadb
-      - DB_PORT=3306     
+      - DB_HOST=10.250.0.68
+      - DB_PORT=5010     
       - DB_PASS=Flexxus2023**
       - DIAS_DESDE_DEMO=-1
       - DIAS_HASTA_DEMO=90
