@@ -28,7 +28,7 @@ services:
       - PRODUCTO_DEFECTO=Integraciones
       - VERSION_DEFECTO=Demo
       - CANTIDAD_DEFECTO_DEMO=10
-      - CANTIDAD_DEFECTO=1
+      - CANTIDAD_DEFECTO=2
       - PATH_LICENCIAACTUALIZAR=v5/license/update
       - SECRET_API=53ru3r_d3_1iC3nci@s_u2
     ports:
