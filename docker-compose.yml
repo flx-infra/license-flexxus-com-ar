@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   licenseserver:
-    image: fabreguesm/flx-server-license:1.0.0
+    image: fabreguesm/flx-server-license
     networks:
       - traefik
     volumes:
